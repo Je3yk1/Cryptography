@@ -39,6 +39,9 @@ public class Krypto {
         ivParams = new IvParameterSpec[2];
     }
 
+    public Charset getCharset() {
+        return CHARSET;
+    }
     void setIv(String iv) {
         this.iv = DatatypeConverter.parseHexBinary(iv);
         ivParam = new IvParameterSpec(this.iv);
