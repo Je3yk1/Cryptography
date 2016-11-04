@@ -23,6 +23,7 @@ public class Tasks {
 
     void zad1(String keyPart, String iV, String ciph) throws FileNotFoundException, UnsupportedEncodingException {
         crypto.setIv(iV);
+        crypto.ivParams[0] = crypto.ivParam;
 
         crypto.cipherBytes[0] = DatatypeConverter.parseBase64Binary(ciph);
         crypto.cipherBytes[0] = Arrays.copyOfRange(crypto.cipherBytes[0],0,16);
@@ -40,7 +41,7 @@ public class Tasks {
                             for(int n5 = 0; n5 < 16; n5++) {
                                 for(int n6 = 0; n6 < 16; n6++) {
                                     for (int n7 = 0; n7 < 16; n7++) {
-                                        System.out.println(n0+" "+n1+" "+n2+" "+n3+" "+n4+" "+n5+" "+n6+" "+n7);
+                                        //System.out.println(n0+" "+n1+" "+n2+" "+n3+" "+n4+" "+n5+" "+n6+" "+n7);
 
                                         String testKey =
                                                 Integer.toHexString(n0) + Integer.toHexString(n1)
@@ -67,7 +68,7 @@ public class Tasks {
                                             }
                                             if (k == plain.length()) {
                                                 System.out.println("Key founded");
-                                                writer.println(testKey + "\t" + plain);
+                                                writer.println(testKey);
                                                 writer.println("Text: " + plain);
                                                 writer.println("time: " + ((System.currentTimeMillis() - tStart) / 1000.0) + " sek");
                                                 writer.flush();

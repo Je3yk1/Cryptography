@@ -24,9 +24,10 @@ public class Main {
         Tasks task = new Tasks();
 
         String keyPart1 = "d343c1fd7d4b9699da28924a09740994ff22506d15290c086c7dea7a";
-        String iV1 = "68a8577d09f8a67ab0e831e7b71621c6";
-        String cipher1 = "dz3Jtkk5pUBD34WQ7H5o9TAHV6PMzOhZ6k6oJ/cKMIK9GDBdNjfGhAvhgwktDauMHXtlLBkf78LauHOjy7cGeL6bRZ1R7yJt/3ASamQQGW2kdPNNgnufKKPovg8gcZrEMboH0m61i2+NNviFL7OYlw==";
-
+        String iV1 = "3fb6887a3b4bea9f115e1570157b94da";
+        String cipher1 = "ZZAcKx8YHWYiZC7GvUk+xU2oja/LoMiqTLSSOTzcfaYgo3PtPnbgn5JJvTfKnGb1FBElltzIg68cPEANxe9ZS3YUGdNjJTwxVNFlxfQV3l99qeqlU97y0P9GS0qr4HuCuwexuwYdDJ+VaIO33oXhJA==";
         task.zad1(keyPart1,iV1,cipher1);
+
+
     }
 }
