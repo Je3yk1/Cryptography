@@ -22,12 +22,16 @@ public class Main {
         crypto.test(iv, key, cipherText);
         */
         Tasks task = new Tasks();
-
+        /*
         String keyPart1 = "d343c1fd7d4b9699da28924a09740994ff22506d15290c086c7dea7a";
         String iV1 = "3fb6887a3b4bea9f115e1570157b94da";
         String cipher1 = "ZZAcKx8YHWYiZC7GvUk+xU2oja/LoMiqTLSSOTzcfaYgo3PtPnbgn5JJvTfKnGb1FBElltzIg68cPEANxe9ZS3YUGdNjJTwxVNFlxfQV3l99qeqlU97y0P9GS0qr4HuCuwexuwYdDJ+VaIO33oXhJA==";
         task.zad1(keyPart1,iV1,cipher1);
-
+        */
+        String keyPart2 = "2b8f0863b01a4c17313954187e6a3d0c832a6b44df319b6668421f1";
+        String iv2 = "85cdcd4cc201b374a9a90d71ebba7e74";
+        String cipher2 = "oqZovViB6bW3QNphyNfs4Rwip8njov/hZLPFZk+Gsj09gIb9k9TNEzGPDYYDHopGubz5eQglFwIr2ztw3ROH8bBjLYt9eOivBNpAnSZk0Ltevb46tN3PbrMUvexF+J4p";
+        task.zad2(keyPart2,iv2,cipher2);
 
     }
 }
